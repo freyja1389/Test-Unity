@@ -15,7 +15,7 @@ public class Shooting : MonoBehaviour
     void Start()
     {
         animator = gameObject.GetComponentInChildren<Animator>();
-        StartCoroutine(Shoot());
+        StartCoroutine(StartAnimation());
     }
 
     // Update is called once per frame
@@ -24,12 +24,18 @@ public class Shooting : MonoBehaviour
         
     }
 
+    IEnumerator StartAnimation()
+    {
+        yield return new WaitForSeconds(1);
+        StartCoroutine(Shoot());
+    }
+
+
     IEnumerator  Shoot()
     {
         animator.SetTrigger("Shooting");
         explosionEffects.Play();
         barrelDustEffects.Play(); 
-        // yield return new WaitForSeconds(0.05f);
         mountDustEffects.Play();
 
         yield return new WaitForSeconds(4.5f);
