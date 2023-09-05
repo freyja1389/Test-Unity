@@ -361,8 +361,9 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
-*/Library/
-*/Temp/
+Library/
+Temp/
 *.csproj
 *.sln
-*/UserSettings/
+UserSettings/
+*.vsconfig
