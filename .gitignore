@@ -361,8 +361,8 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
-HexGame/Library/
-HexGame/Temp/
+*/Library/
+*/Temp/
 *.csproj
 *.sln
-HexGame/UserSettings/
+*/UserSettings/
