@@ -518,7 +518,6 @@ GameObject:
   m_Component:
   - component: {fileID: 3032505462030705834}
   - component: {fileID: 3287388977293513198}
-  - component: {fileID: 3287388977293513184}
   m_Layer: 0
   m_Name: Build_Artillery_with_effectsv2
   m_TagString: Untagged
@@ -563,21 +562,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &3287388977293513184
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2404446155455200784}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1e0925022aac2d2419c2c034ca3358b9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  explosionEffects: {fileID: 3413480826090593230}
-  mountDustEffects: {fileID: 3412911604005321868}
-  barrelDustEffects: {fileID: 3412911602689925633}
 --- !u!1 &2688312394919421737
 GameObject:
   m_ObjectHideFlags: 0
@@ -1141,11 +1125,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2181638992275293597, guid: 223288a576961f94b858a0a9236760e4, type: 3}
   m_PrefabInstance: {fileID: 3735582653293390407}
   m_PrefabAsset: {fileID: 0}
---- !u!198 &3413480826090593230 stripped
-ParticleSystem:
-  m_CorrespondingSourceObject: {fileID: 2056009882281537929, guid: 223288a576961f94b858a0a9236760e4, type: 3}
-  m_PrefabInstance: {fileID: 3735582653293390407}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &4053566940984260429
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1208,11 +1187,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1571206372138681292, guid: ae3ee7cfb9f854042ab481aa165a28a1, type: 3}
   m_PrefabInstance: {fileID: 4053566940984260429}
   m_PrefabAsset: {fileID: 0}
---- !u!198 &3412911602689925633 stripped
-ParticleSystem:
-  m_CorrespondingSourceObject: {fileID: 1665259437893768524, guid: ae3ee7cfb9f854042ab481aa165a28a1, type: 3}
-  m_PrefabInstance: {fileID: 4053566940984260429}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &8611858566155784442
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1273,10 +1247,5 @@ PrefabInstance:
 --- !u!4 &3282880557673212428 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6488655464706554614, guid: 8aad9fb9dc1e83e439f50ebd25007039, type: 3}
-  m_PrefabInstance: {fileID: 8611858566155784442}
-  m_PrefabAsset: {fileID: 0}
---- !u!198 &3412911604005321868 stripped
-ParticleSystem:
-  m_CorrespondingSourceObject: {fileID: 6403677458819017846, guid: 8aad9fb9dc1e83e439f50ebd25007039, type: 3}
   m_PrefabInstance: {fileID: 8611858566155784442}
   m_PrefabAsset: {fileID: 0}
