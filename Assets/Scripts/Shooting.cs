@@ -11,34 +11,19 @@ public class Shooting : MonoBehaviour
     private ParticleSystem mountDustEffects;
     [SerializeField]
     private ParticleSystem barrelDustEffects;
-    // Start is called before the first frame update
+
+    #region Unity Messages
     void Start()
     {
         animator = gameObject.GetComponentInChildren<Animator>();
-        StartCoroutine(StartAnimation());
     }
+    #endregion
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
-    IEnumerator StartAnimation()
-    {
-        yield return new WaitForSeconds(1);
-        StartCoroutine(Shoot());
-    }
-
-
-    IEnumerator  Shoot()
+    public void StartPlayingShootingEffects()
     {
         animator.SetTrigger("Shooting");
         explosionEffects.Play();
-        barrelDustEffects.Play(); 
+        barrelDustEffects.Play();
         mountDustEffects.Play();
-
-        yield return new WaitForSeconds(4.5f);
-        StartCoroutine(Shoot());
     }
 }
